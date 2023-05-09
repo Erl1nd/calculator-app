@@ -1,0 +1,115 @@
+/* HTML & BODY */
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Calculator */
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* screen */
+.screen {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: #3B3B3B;
+    margin: 16px;
+    border-radius: 20px;
+}
+
+.user-input-screen,
+.result-output-screen {
+    padding: 16px;
+    color: white;
+}
+
+.user-input-screen {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.result-output-screen {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* button-container */
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    height: 500px;
+    margin: 16px;
+}
+
+.spacer {
+    grid-column-start: 2;
+    visibility: hidden;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+button div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.number-button div {
+    background-color: rgb(237, 237, 237);
+    color: black;
+}
+
+.operator div,
+.equals-button div{
+    background-color: rgb(243, 243, 72);
+    color: black;
+}
+
+.ac-button div{
+    background-color: rgb(187, 255, 150);
+    color: black;
+}
+
+.delete-button div{
+    background-color: rgb(255, 150, 150);
+    color: black;
+}
+
+/* hover */
+button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
