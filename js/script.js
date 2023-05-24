@@ -14,6 +14,8 @@ let secondOperand = 0;
 let operator = null;
 let screenReset = false;
 
+equalsBtn.addEventListener("click", () => evaluate());
+
 numberBtn.forEach((button) =>
     button.addEventListener("click", () => appendNumber(button.textContent))
 )
@@ -75,7 +77,7 @@ function evaluate(){
         alert("Can't Divide");
         return
     }
-
+    
     secondOperand = resultOutput.textContent;
     resultOutput.textContent = operate(operator, firstOperand, secondOperand);
     userInput.textContent = operate(operator, firstOperand, secondOperand);
@@ -114,4 +116,6 @@ function clearCalculator() {
     screenReset = false;
     resultOutput.textContent = "";
     userInput.textContent = "";
+    firstOperand = 0;
+    secondOperand = 0;
 }
