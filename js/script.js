@@ -81,6 +81,7 @@ function evaluate(){
     secondOperand = resultOutput.textContent;
     resultOutput.textContent = operate(operator, firstOperand, secondOperand);
     userInput.textContent = operate(operator, firstOperand, secondOperand);
+    operator = null;
 }
 
 // Operate
