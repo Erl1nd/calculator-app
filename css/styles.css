@@ -62,7 +62,7 @@ body {
 }
 
 .spacer {
-    grid-column-start: 2;
+    grid-column-start: 3;
     visibility: hidden;
 }
 
